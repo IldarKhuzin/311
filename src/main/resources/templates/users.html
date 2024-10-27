@@ -15,6 +15,7 @@
             <th>Имя</th>
             <th>Фамилия</th>
             <th>Возраст</th>
+            <th>Пароль</th>>
             <th>Действия</th>
         </tr>
 
@@ -23,6 +24,7 @@
             <td th:text="${us.name}"/>
             <td th:text="${us.surname}"/>
             <td th:text="${us.age}"/>
+            <td th:text="${us.password}"/>
 
             <td>
                 <a th:href="@{'/delete/' + ${us.id}}"  th:text="Удалить"/>
